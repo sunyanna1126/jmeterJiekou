@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="795" it="131" lt="0" ct="0" ts="1600678256543" s="true" lb="获取基础参数" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="公共接口 1-1" dt="" by="3760" sby="1638" ng="1" na="1">
+  <sample t="713" it="123" lt="0" ct="0" ts="1600678256543" s="true" lb="App基础接口" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="公共接口 1-1" dt="" by="3027" sby="1323" ng="1" na="1">
+    <httpSample t="246" it="0" lt="245" ct="202" ts="1600678256630" s="true" lb="用户登陆_获取access_token(合生活App)" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="466" sby="325" ng="1" na="1">
+      <java.net.URL>https://token.91hework.com/oauth/token?version=6.2.1&amp;password=123456&amp;grant_type=multiple&amp;customID=10000&amp;username=13837200200</java.net.URL>
+    </httpSample>
+    <sample t="467" it="4" lt="0" ct="0" ts="1600678256908" s="true" lb="获取个人信息" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="公共接口 1-1" dt="" by="2561" sby="998" ng="1" na="1">
+      <httpSample t="64" it="0" lt="64" ct="40" ts="1600678256909" s="true" lb="App-获取个人信息" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="617" sby="268" ng="1" na="1">
+        <java.net.URL>https://mtest.91hework.com//mobile/person/current?version=6.2.1&amp;access_token=add94143-1842-4c62-a2e1-e3185a977b12&amp;customID=10000</java.net.URL>
+      </httpSample>
+      <httpSample t="332" it="0" lt="332" ct="0" ts="1600678256975" s="true" lb="App-完整的个人信息" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="1212" sby="388" ng="1" na="1">
+        <java.net.URL>https://mtest.91hework.com//mobile/person/complete?version=6.2.1&amp;personID=2924183926278734145&amp;communityID=269931278217394676665406&amp;access_token=add94143-1842-4c62-a2e1-e3185a977b12&amp;customID=10000</java.net.URL>
+      </httpSample>
+      <httpSample t="71" it="0" lt="71" ct="0" ts="1600678257308" s="true" lb="App-获取社区信息" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="732" sby="342" ng="1" na="1">
+        <java.net.URL>https://mtest.91hework.com//mobile/community/get?version=6.2.1&amp;communityID=269931278217394676665406&amp;access_token=add94143-1842-4c62-a2e1-e3185a977b12</java.net.URL>
+      </httpSample>
+    </sample>
+  </sample>
+  <sample t="82" it="7" lt="0" ct="0" ts="1600678257380" s="true" lb="后台基础接口" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="公共接口 1-1" dt="" by="733" sby="315" ng="1" na="1">
+    <httpSample t="82" it="0" lt="82" ct="35" ts="1600678257381" s="true" lb="后台管理_登陆_获取用户信息" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="733" sby="315" ng="1" na="1">
+      <assertionResult>
+        <name>响应断言</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <java.net.URL>https://test.91hiwork.com/admin/lg/toLogIn?password=kHi2YuuvF9iWgTFM9M4mMA==&amp;username=13837200200&amp;verifyCode=0198&amp;isFlag=true%20</java.net.URL>
+    </httpSample>
+  </sample>
+</sample>
+<httpSample t="105" it="0" lt="104" ct="57" ts="1600678257558" s="true" lb="后台管理_标识字典管理_标识字典管理列表" rc="200" rm="OK" tn="场景用例1_用户查看并新增标识 1-1" dt="text" by="3739" sby="278" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/identifier/businesslinelist</java.net.URL>
+</httpSample>
+<httpSample t="40" it="0" lt="40" ct="0" ts="1600678257668" s="true" lb="后台管理_标识字典管理_判断该表示名称是否已添加" rc="200" rm="OK" tn="场景用例1_用户查看并新增标识 1-1" dt="text" by="394" sby="435" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/identifier/getIdentifierInfo?identifierName=%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%954&amp;businessId=4</java.net.URL>
+</httpSample>
+<httpSample t="49" it="0" lt="49" ct="0" ts="1600678257715" s="true" lb="后台管理_标识字典管理_标识字典管理新增" rc="200" rm="OK" tn="场景用例1_用户查看并新增标识 1-1" dt="text" by="407" sby="440" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/identifier/addIdentifierInfo</java.net.URL>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1600678257768" s="true" lb="调试取样器" rc="200" rm="OK" tn="场景用例1_用户查看并新增标识 1-1" dt="text" by="822" sby="0" ng="1" na="1"/>
+<httpSample t="127" it="0" lt="127" ct="42" ts="1600678257773" s="true" lb="后台管理_标识字典管理_标识字典管理列表(使用中)" rc="200" rm="OK" tn="场景用例2_用户查看并停止标识 2-1" dt="text" by="3599" sby="390" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/identifier/findIdentifierInfo</java.net.URL>
+</httpSample>
+<httpSample t="45" it="0" lt="45" ct="0" ts="1600678257902" s="true" lb="后台管理_标识字典管理_标识字典管理停用" rc="200" rm="OK" tn="场景用例2_用户查看并停止标识 2-1" dt="text" by="406" sby="394" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/identifier/deleteIdentifierInfo?id=7952242059519608252</java.net.URL>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1600678257951" s="true" lb="调试取样器" rc="200" rm="OK" tn="场景用例2_用户查看并停止标识 2-1" dt="text" by="859" sby="0" ng="1" na="1"/>
+<httpSample t="589" it="0" lt="589" ct="56" ts="1600678257969" s="true" lb="后台管理_数据管理_库存清单列表" rc="200" rm="OK" tn="场景用例2_用户查看库存清单、库存汇总、库存台账 3-1" dt="text" by="6325" sby="434" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockData/findStockListingList</java.net.URL>
+</httpSample>
+<httpSample t="402" it="0" lt="402" ct="0" ts="1600678258560" s="true" lb="后台管理_数据管理_库存汇总列表" rc="200" rm="OK" tn="场景用例2_用户查看库存清单、库存汇总、库存台账 3-1" dt="text" by="2395" sby="442" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockData/findStockSummaryList</java.net.URL>
+</httpSample>
+<httpSample t="527" it="0" lt="527" ct="0" ts="1600678258964" s="true" lb="后台管理_数据管理_库存台账列表" rc="200" rm="OK" tn="场景用例2_用户查看库存清单、库存汇总、库存台账 3-1" dt="text" by="8286" sby="616" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockData/findStockHistoryList</java.net.URL>
+</httpSample>
+<httpSample t="309" it="0" lt="309" ct="63" ts="1600678259496" s="true" lb="后台管理_仓库管理_出库管理列表" rc="200" rm="OK" tn="场景用例3_用户查看出库管理 4-1" dt="text" by="5907" sby="522" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/listOutOfStockProduct</java.net.URL>
+</httpSample>
+<httpSample t="518" it="0" lt="517" ct="39" ts="1600678259810" s="true" lb="后台管理_仓库管理_入库管理列表" rc="200" rm="OK" tn="场景用例4_用户查看并对商品入库 5-1" dt="text" by="7443" sby="520" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/listProduct</java.net.URL>
+</httpSample>
+<httpSample t="80" it="0" lt="79" ct="0" ts="1600678260330" s="true" lb="后台管理_仓库管理_入库管理查看" rc="200" rm="OK" tn="场景用例4_用户查看并对商品入库 5-1" dt="text" by="11608" sby="436" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/getProductDetails?companyId=269931278217394676666639&amp;stockId=5557169553477814985</java.net.URL>
+</httpSample>
+<httpSample t="36" it="0" lt="36" ct="0" ts="1600678260411" s="true" lb="后台管理_仓库管理_入库管理新增_业务线" rc="200" rm="OK" tn="场景用例4_用户查看并对商品入库 5-1" dt="text" by="2223" sby="371" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/getBusinessLine</java.net.URL>
+</httpSample>
+<httpSample t="453" it="0" lt="90" ct="0" ts="1600678260448" s="true" lb="后台管理_仓库管理_入库管理新增_供应商" rc="200" rm="OK" tn="场景用例4_用户查看并对商品入库 5-1" dt="text" by="664472" sby="367" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/getSupplier</java.net.URL>
+</httpSample>
+<httpSample t="201" it="0" lt="201" ct="0" ts="1600678260908" s="true" lb="后台管理_仓库管理_入库管理新增_库位" rc="200" rm="OK" tn="场景用例4_用户查看并对商品入库 5-1" dt="text" by="14492" sby="434" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/library/findLibraryList</java.net.URL>
+</httpSample>
+<httpSample t="440" it="0" lt="440" ct="0" ts="1600678261111" s="true" lb="后台管理_仓库管理_入库管理新增_获取商品" rc="200" rm="OK" tn="场景用例4_用户查看并对商品入库 5-1" dt="text" by="9569" sby="491" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/getGoods</java.net.URL>
+</httpSample>
+<httpSample t="469" it="0" lt="469" ct="0" ts="1600678261555" s="true" lb="后台管理_仓库管理_入库管理新增_对所选商品入库" rc="200" rm="OK" tn="场景用例4_用户查看并对商品入库 5-1" dt="text" by="391" sby="787" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/addStock</java.net.URL>
+</httpSample>
+<httpSample t="108" it="0" lt="108" ct="36" ts="1600678262028" s="true" lb="后台管理_库存基础数据_库位管理列表" rc="200" rm="OK" tn="场景用例5_用户查看并新增库位 6-1" dt="text" by="3177" sby="341" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/library/findLibraryList</java.net.URL>
+</httpSample>
+<httpSample t="43" it="0" lt="43" ct="0" ts="1600678262137" s="true" lb="后台管理_库存基础数据_库位管理新增_获取业务线列表" rc="200" rm="OK" tn="场景用例5_用户查看并新增库位 6-1" dt="text" by="472" sby="368" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/library/getBusinessLineList</java.net.URL>
+</httpSample>
+<httpSample t="43" it="0" lt="43" ct="0" ts="1600678262181" s="true" lb="后台管理_库存基础数据_库位管理新增_新增库位" rc="200" rm="OK" tn="场景用例5_用户查看并新增库位 6-1" dt="text" by="407" sby="419" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/library/addLibraryInfo</java.net.URL>
+</httpSample>
+<httpSample t="80" it="0" lt="80" ct="43" ts="1600678262227" s="true" lb="后台管理_库存基础数据_仓位管理列表" rc="200" rm="OK" tn="场景用例6_用户查看仓位管理 7-1" dt="text" by="696" sby="282" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/warehouse/findWarehouseInfoList</java.net.URL>
+</httpSample>
+<httpSample t="109" it="0" lt="109" ct="40" ts="1600678262438" s="true" lb="1_后台管理_标识字典管理_标识字典管理搜索_使用中" rc="200" rm="OK" tn="数据驱动 8-1" dt="text" by="2348" sby="397" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/identifier/findIdentifierInfo</java.net.URL>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1600678262567" s="true" lb="2_后台管理_标识字典管理_标识字典管理搜索_已停止" rc="200" rm="OK" tn="数据驱动 8-1" dt="text" by="1047" sby="487" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/identifier/findIdentifierInfo</java.net.URL>
+</httpSample>
+<httpSample t="98" it="0" lt="98" ct="0" ts="1600678262623" s="true" lb="3_后台管理_库存清单_库存清单搜索" rc="200" rm="OK" tn="数据驱动 8-1" dt="text" by="1213" sby="1903" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockData/findStockListingList</java.net.URL>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1600678262727" s="true" lb="4_后台管理_库存汇总_库存汇总搜索" rc="200" rm="OK" tn="数据驱动 8-1" dt="text" by="873" sby="454" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockData/findStockSummaryList</java.net.URL>
+</httpSample>
+<httpSample t="132" it="0" lt="132" ct="0" ts="1600678262780" s="true" lb="5_后台管理_库存台账_库存台账搜索" rc="200" rm="OK" tn="数据驱动 8-1" dt="text" by="1410" sby="1221" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockData/findStockHistoryList</java.net.URL>
+</httpSample>
+<httpSample t="52" it="0" lt="52" ct="0" ts="1600678262917" s="true" lb="6_后台管理_仓库管理_出库管理搜索" rc="200" rm="OK" tn="数据驱动 8-1" dt="text" by="1424" sby="1231" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/listOutOfStockProduct</java.net.URL>
+</httpSample>
+<httpSample t="316" it="0" lt="316" ct="0" ts="1600678262978" s="true" lb="7_后台管理_仓库管理_入库管理搜索" rc="200" rm="OK" tn="数据驱动 8-1" dt="text" by="7260" sby="697" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/stockManagement/listProduct</java.net.URL>
+</httpSample>
+<httpSample t="63" it="0" lt="63" ct="0" ts="1600678263298" s="true" lb="8_后台管理_库存基础数据_库位管理搜索" rc="200" rm="OK" tn="数据驱动 8-1" dt="text" by="2105" sby="453" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/stock/library/findLibraryList</java.net.URL>
+</httpSample>
+
+</testResults>

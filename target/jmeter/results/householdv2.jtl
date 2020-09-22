@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="763" it="164" lt="0" ct="0" ts="1600678266183" s="true" lb="获取基础参数" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="公共接口 1-1" dt="" by="3760" sby="1454" ng="1" na="1">
+  <sample t="682" it="152" lt="0" ct="0" ts="1600678266184" s="true" lb="App基础接口" rc="200" rm="Number of samples in transaction : 2, number of failing samples : 0" tn="公共接口 1-1" dt="" by="3027" sby="1185" ng="1" na="1">
+    <httpSample t="191" it="0" lt="190" ct="151" ts="1600678266298" s="true" lb="用户登陆_获取access_token(合生活App)" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="466" sby="325" ng="1" na="1">
+      <java.net.URL>https://token.91hework.com/oauth/token?version=6.2.1&amp;password=123456&amp;grant_type=multiple&amp;customID=10000&amp;username=13837200200</java.net.URL>
+    </httpSample>
+    <sample t="491" it="8" lt="0" ct="0" ts="1600678266519" s="true" lb="获取个人信息" rc="200" rm="Number of samples in transaction : 3, number of failing samples : 0" tn="公共接口 1-1" dt="" by="2561" sby="860" ng="1" na="1">
+      <httpSample t="62" it="0" lt="62" ct="39" ts="1600678266521" s="true" lb="App-获取个人信息" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="617" sby="222" ng="1" na="1">
+        <java.net.URL>https://mtest.91hework.com//mobile/person/current?version=6.2.1&amp;access_token=add94143-1842-4c62-a2e1-e3185a977b12&amp;customID=10000</java.net.URL>
+      </httpSample>
+      <httpSample t="355" it="0" lt="354" ct="0" ts="1600678266584" s="true" lb="App-完整的个人信息" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="1212" sby="342" ng="1" na="1">
+        <java.net.URL>https://mtest.91hework.com//mobile/person/complete?version=6.2.1&amp;personID=2924183926278734145&amp;communityID=269931278217394676665406&amp;access_token=add94143-1842-4c62-a2e1-e3185a977b12&amp;customID=10000</java.net.URL>
+      </httpSample>
+      <httpSample t="74" it="0" lt="74" ct="0" ts="1600678266941" s="true" lb="App-获取社区信息" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="732" sby="296" ng="1" na="1">
+        <java.net.URL>https://mtest.91hework.com//mobile/community/get?version=6.2.1&amp;communityID=269931278217394676665406&amp;access_token=add94143-1842-4c62-a2e1-e3185a977b12</java.net.URL>
+      </httpSample>
+    </sample>
+  </sample>
+  <sample t="81" it="10" lt="0" ct="0" ts="1600678267019" s="true" lb="后台基础接口" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="公共接口 1-1" dt="" by="733" sby="269" ng="1" na="1">
+    <httpSample t="81" it="0" lt="81" ct="34" ts="1600678267022" s="true" lb="后台管理_登陆_获取用户信息" rc="200" rm="OK" tn="公共接口 1-1" dt="text" by="733" sby="269" ng="1" na="1">
+      <assertionResult>
+        <name>响应断言</name>
+        <failure>false</failure>
+        <error>false</error>
+      </assertionResult>
+      <java.net.URL>https://test.91hiwork.com/admin/lg/toLogIn?password=kHi2YuuvF9iWgTFM9M4mMA==&amp;username=13837200200&amp;verifyCode=0198&amp;isFlag=true%20</java.net.URL>
+    </httpSample>
+  </sample>
+</sample>
+<httpSample t="801" it="0" lt="800" ct="45" ts="1600678267214" s="true" lb="获取已有房间列表" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="15857" sby="495" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/householdv2//house/getOwnerHouseList?_hidden_currentPageNumber=1</java.net.URL>
+</httpSample>
+<httpSample t="135" it="0" lt="106" ct="0" ts="1600678268017" s="true" lb="获取楼栋" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="50421" sby="397" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/householdv2/authentication/locationHouse?objectId=root&amp;objectType=1&amp;companyId=269931278217394676665406</java.net.URL>
+</httpSample>
+<httpSample t="88" it="0" lt="63" ct="0" ts="1600678268155" s="true" lb="获取门牌/房间号" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="82176" sby="413" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/householdv2/authentication/locationHouse?objectType=21&amp;companyId=269931278217394676665406&amp;objectId=7188054554932102727</java.net.URL>
+</httpSample>
+<httpSample t="36" it="0" lt="36" ct="0" ts="1600678268244" s="true" lb="查看是否认证" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="416" sby="518" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/householdv2/authentication/checkAuthentication?companyId=269931278217394676639121&amp;objectId=1709652195636627554&amp;personId=7672161831005405603</java.net.URL>
+</httpSample>
+<httpSample t="29" it="0" lt="29" ct="0" ts="1600678268281" s="true" lb="获取验证码" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="376" sby="389" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/householdv2/authentication/sendCheckNum?companyInfoID=2699312782173946766&amp;phoneNum=15201129744</java.net.URL>
+</httpSample>
+<httpSample t="40" it="0" lt="39" ct="14" ts="1600678269312" s="true" lb="提取验证码" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="9357" sby="189" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>http://10.1.1.143:20032/message/paginate?limit=20&amp;offset=0&amp;search=15201129744&amp;_=1600311205416</java.net.URL>
+</httpSample>
+<httpSample t="354" it="0" lt="353" ct="35" ts="1600678269357" s="true" lb="提交认证信息" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="413" sby="667" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/householdv2/authentication/getAuthentication?companyInfoID=2699312782173946766&amp;companyId=269931278217394676665406&amp;userName=%E5%B0%8F%E7%99%BD%E7%99%BD&amp;phoneNum=15201129744&amp;cardValue=130183199911111111&amp;objectId=3189456033010108606&amp;personId=7672161831005405603&amp;checkNum=768463&amp;cardType=1010</java.net.URL>
+</httpSample>
+<httpSample t="121" it="0" lt="121" ct="0" ts="1600678269712" s="true" lb="认证管理（列表）" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="6793" sby="858" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/erp/admin/interface/customer/room/relation/list</java.net.URL>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1600678269836" s="true" lb="审核拒绝" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="365" sby="637" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://test.91hiwork.com/erp/admin/interface/customer/room/relation/check</java.net.URL>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1600678269891" s="true" lb="调试取样器" rc="200" rm="OK" tn="hilife-vshop_场景用例 1-1" dt="text" by="961" sby="0" ng="1" na="1"/>
+
+</testResults>
